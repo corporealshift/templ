@@ -135,4 +135,41 @@ footer {
   float: left;
 }
 
+/* line 104, ../scss/base.scss */
+a {
+  color: green;
+  text-decoration: none;
+}
+
+/* line 109, ../scss/base.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 1, ../scss/dropdowns.scss */
+.nav-wrapper {
+  border: 1px solid black;
+}
+
+/* line 9, ../scss/dropdowns.scss */
+nav > div > ul > li {
+  display: inline;
+}
+/* line 12, ../scss/dropdowns.scss */
+nav > div > ul > li a {
+  display: inline-block;
+  line-height: 2.5em;
+  padding: 0 0.4em;
+}
+/* line 18, ../scss/dropdowns.scss */
+nav > div > ul > li:hover a {
+  background: darkblue;
+  color: white;
+}
+
+/* line 24, ../scss/dropdowns.scss */
+nav > div > ul > li > ul {
+  display: none;
+}
+
 /*# sourceMappingURL=main.css.map */

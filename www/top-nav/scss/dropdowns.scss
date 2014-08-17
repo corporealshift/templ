@@ -1,0 +1,28 @@
+.nav-wrapper {
+    border: $border;
+}
+
+nav > div > ul {
+
+}
+
+nav > div > ul > li {
+    display: inline;
+
+    a {
+        display: inline-block;
+        line-height: $nav_height;
+        padding: 0 $padding;
+    }
+
+    &:hover a {
+        background: $nav_hover_color;
+        color: $nav_hover_text_color;
+    }
+}
+
+nav > div > ul > li > ul {
+    display: none;
+}
+
+// nav > div > ul > li:
