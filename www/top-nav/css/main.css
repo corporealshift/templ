@@ -205,39 +205,50 @@ nav > div > ul > li:hover > ul {
   background: orange;
   padding: 0.4em;
   right: calc(0px - ((980px - 100%) / 2));
+  transition: 0.25s width ease-in-out;
 }
-/* line 7, ../scss/contact.scss */
+/* line 9, ../scss/contact.scss */
 .contact-form .show-form {
   position: absolute;
   display: block;
   transform: rotate(270deg);
-  left: -50px;
+  left: -64px;
   top: 50px;
+  width: 100px;
+  background: yellow;
+  text-align: center;
+  padding: 0.4em 0;
 }
-/* line 15, ../scss/contact.scss */
+/* line 21, ../scss/contact.scss */
 .contact-form label {
   display: block;
   font-size: 0.8em;
   padding: 0.2em;
+  white-space: nowrap;
 }
-/* line 21, ../scss/contact.scss */
+/* line 28, ../scss/contact.scss */
 .contact-form input, .contact-form textarea {
   width: 98%;
   line-height: 1.5em;
   font-size: 0.8em;
 }
-/* line 26, ../scss/contact.scss */
+/* line 33, ../scss/contact.scss */
 .contact-form input[type=submit], .contact-form textarea[type=submit] {
   width: 100%;
   height: 1.5em;
 }
-/* line 32, ../scss/contact.scss */
+/* line 39, ../scss/contact.scss */
 .contact-form.fixed {
   position: fixed;
 }
-/* line 35, ../scss/contact.scss */
+/* line 42, ../scss/contact.scss */
 .contact-form.fixed.collapsed {
   width: 0px;
+  padding: 0;
+}
+/* line 46, ../scss/contact.scss */
+.contact-form.fixed.collapsed .contact {
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=main.css.map */
