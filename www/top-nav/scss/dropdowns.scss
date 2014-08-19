@@ -6,8 +6,9 @@ nav > div > ul {
 
 }
 
-nav > div > ul > li {
+nav > div > ul li {
     display: inline;
+    position: relative;
 
     a {
         display: inline-block;
@@ -15,14 +16,35 @@ nav > div > ul > li {
         padding: 0 $padding;
     }
 
-    &:hover a {
-        background: $nav_hover_color;
-        color: $nav_hover_text_color;
-    }
+}
+
+nav > div > ul > li:hover > a {
+    background: $nav_hover_color;
+    color: $nav_hover_text_color;
 }
 
 nav > div > ul > li > ul {
     display: none;
+    position: absolute;
+    left: 0px;
+    background: $dropdown_background_color;
+
+    & > li {
+        display: block;
+
+        & > a {
+            color: $dropdown_text_color;
+        }
+
+        &:hover > a {
+            background: $dropdown_hover_link_color;
+            color: $dropdown_hover_text_color;
+        }
+    }
+}
+
+nav > div > ul > li:hover > ul {
+    display: block;
 }
 
 // nav > div > ul > li:
