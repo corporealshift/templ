@@ -35,7 +35,23 @@
             </header>
         </div>
         <div class="content-wrapper">
-
+            <div id="contact-form-container" class="contact-form fixed">
+                <a href="#" class="show-form">Contact Us</a>
+                <form id="contact-form" class="contact" action="/" method="post">
+                    <label for="first-name">First Name*</label>
+                    <input type="text" name="first-name" value="">
+                    <label for="last-name">Last Name*</label>
+                    <input type="text" name="last-name" value="">
+                    <label for="phone">Phone Number*</label>
+                    <input type="text" name="phone" value="">
+                    <label for="email">Email Address*</label>
+                    <input type="text" name="email" value="">
+                    <label for="question">Type Question</label>
+                    <textarea name="question" rows="4"></textarea>
+                    <input type="submit" value="Send Inquiry">
+                    <span class="req">* Required</span>
+                </form>
+            </div>
         </div>
         <div class="footer-wrapper">
             <footer>

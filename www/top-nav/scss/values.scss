@@ -1,5 +1,8 @@
 $page_width: 980px;
 $padding: 0.4em;
+$page_background: lightgray;
+$content_background: white;
+$header_background: lightblue;
 
 $link_color: green;
 
@@ -11,6 +14,13 @@ $dropdown_background_color: gray;
 $dropdown_text_color: white;
 $dropdown_hover_link_color: white;
 $dropdown_hover_text_color: darkblue;
+
+// Contact Form
+$contact_width: 250px;
+$contact_background: orange;
+$input_height: 1.5em;
+$input_text_size: 0.8em;
+$contact_right_pos: calc(0px - ((980px - 100%) / 2));
 
 // Used for Templates only
 $border: 1px solid black;

@@ -23,40 +23,41 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 body {
   line-height: 1;
   font-family: Helvetica, Arial, sans-serif;
+  background: lightgray;
 }
 
-/* line 25, ../scss/base.scss */
+/* line 26, ../scss/base.scss */
 ol, ul {
   list-style: none;
 }
 
 /* tables still need 'cellspacing="0"' in the markup */
-/* line 29, ../scss/base.scss */
+/* line 30, ../scss/base.scss */
 table {
   border-collapse: separate;
   border-spacing: 0;
 }
 
-/* line 33, ../scss/base.scss */
+/* line 34, ../scss/base.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
 }
 
-/* line 37, ../scss/base.scss */
+/* line 38, ../scss/base.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: "";
 }
 
-/* line 41, ../scss/base.scss */
+/* line 42, ../scss/base.scss */
 blockquote, q {
   quotes: "" "";
 }
 
 /** End CSS Reset **/
 /** Clear group elements - supports back to ie6 **/
-/* line 47, ../scss/base.scss */
+/* line 48, ../scss/base.scss */
 .group:after {
   visibility: hidden;
   display: block;
@@ -65,83 +66,86 @@ blockquote, q {
   height: 0;
 }
 
-/* line 54, ../scss/base.scss */
+/* line 55, ../scss/base.scss */
 * html .group {
   zoom: 1;
 }
 
 /* IE6 */
-/* line 55, ../scss/base.scss */
+/* line 56, ../scss/base.scss */
 *:first-child + html .group {
   zoom: 1;
 }
 
 /* IE7 */
-/* line 57, ../scss/base.scss */
+/* line 58, ../scss/base.scss */
 header {
   width: 980px;
   margin: 0 auto;
+  background: lightblue;
 }
 
-/* line 62, ../scss/base.scss */
+/* line 64, ../scss/base.scss */
 .header-wrapper, .content-wrapper, .footer-wrapper {
   position: relative;
 }
 
-/* line 66, ../scss/base.scss */
+/* line 68, ../scss/base.scss */
 .content-wrapper {
   width: 980px;
   margin: 0 auto;
+  background: white;
+  height: 5000px;
 }
 
-/* line 71, ../scss/base.scss */
+/* line 75, ../scss/base.scss */
 .n-col.p25 {
   width: 25%;
 }
 
-/* line 75, ../scss/base.scss */
+/* line 79, ../scss/base.scss */
 .n-col.p33 {
   width: 33.333333%;
 }
 
-/* line 79, ../scss/base.scss */
+/* line 83, ../scss/base.scss */
 .n-col.p50 {
   width: 50%;
 }
 
-/* line 83, ../scss/base.scss */
+/* line 87, ../scss/base.scss */
 .n-col.p66 {
   width: 66.666667%;
 }
 
-/* line 87, ../scss/base.scss */
+/* line 91, ../scss/base.scss */
 .n-col.p75 {
   width: 75%;
 }
 
-/* line 91, ../scss/base.scss */
+/* line 95, ../scss/base.scss */
 footer {
   width: 980px;
   margin: 0 auto;
 }
 
-/* line 96, ../scss/base.scss */
+/* line 100, ../scss/base.scss */
 .right {
   float: right;
 }
 
-/* line 100, ../scss/base.scss */
+/* line 104, ../scss/base.scss */
 .left {
   float: left;
 }
 
-/* line 104, ../scss/base.scss */
+/* line 108, ../scss/base.scss */
 a {
   color: green;
   text-decoration: none;
 }
 
-/* line 109, ../scss/base.scss */
+/* line 113, ../scss/base.scss */
 a:hover {
   text-decoration: underline;
 }
@@ -193,6 +197,47 @@ nav > div > ul > li > ul > li:hover > a {
 /* line 46, ../scss/dropdowns.scss */
 nav > div > ul > li:hover > ul {
   display: block;
+}
+
+/* line 1, ../scss/contact.scss */
+.contact-form {
+  width: 250px;
+  background: orange;
+  padding: 0.4em;
+  right: calc(0px - ((980px - 100%) / 2));
+}
+/* line 7, ../scss/contact.scss */
+.contact-form .show-form {
+  position: absolute;
+  display: block;
+  transform: rotate(270deg);
+  left: -50px;
+  top: 50px;
+}
+/* line 15, ../scss/contact.scss */
+.contact-form label {
+  display: block;
+  font-size: 0.8em;
+  padding: 0.2em;
+}
+/* line 21, ../scss/contact.scss */
+.contact-form input, .contact-form textarea {
+  width: 98%;
+  line-height: 1.5em;
+  font-size: 0.8em;
+}
+/* line 26, ../scss/contact.scss */
+.contact-form input[type=submit], .contact-form textarea[type=submit] {
+  width: 100%;
+  height: 1.5em;
+}
+/* line 32, ../scss/contact.scss */
+.contact-form.fixed {
+  position: fixed;
+}
+/* line 35, ../scss/contact.scss */
+.contact-form.fixed.collapsed {
+  width: 0px;
 }
 
 /*# sourceMappingURL=main.css.map */

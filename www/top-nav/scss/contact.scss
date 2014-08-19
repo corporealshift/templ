@@ -1,0 +1,39 @@
+.contact-form {
+    width: $contact_width;
+    background: $contact_background;
+    padding: $padding;
+    right: $contact_right_pos;
+
+    .show-form {
+        position: absolute;
+        display: block;
+        transform: rotate(270deg);
+        left: -50px;
+        top: 50px;
+    }
+
+    label {
+        display: block;
+        font-size: $input_text_size;
+        padding: $padding / 2;
+    }
+
+    input, textarea {
+        width: 98%;
+        line-height: $input_height;
+        font-size: $input_text_size;
+
+        &[type=submit] {
+            width: 100%;
+            height: $input_height;
+        }
+    }
+
+    &.fixed {
+        position: fixed;
+
+        &.collapsed {
+            width: 0px;
+        }
+    }
+}
